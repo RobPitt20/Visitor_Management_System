@@ -1,0 +1,103 @@
+/* Modal Background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    padding: 30px; /* Increased padding for a more spacious look */
+    border-radius: 5px;
+    width: 500px; /* Increased width */
+    max-width: 90%; /* Ensures it’s responsive on smaller screens */
+    text-align: center;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaa;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: black;
+}
+
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the input fields horizontally */
+    margin: 15px 0;
+}
+
+.input-field input {
+    width: 80px; /* Set the width and height to create a circular shape */
+    height: 80px;
+    padding: 0;
+    border-radius: 50%; /* Makes the input a circle */
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    text-align: center; /* Centers text inside the input */
+}
+
+.input-field label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: center; /* Center-aligns the label */
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #5a9fcf;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+#eventTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#eventTable th, #eventTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#eventTable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 5px 10px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+.highlighted {
+    color: red; /* Change font color */
+    font-weight: bold;
+}
